@@ -1,0 +1,64 @@
+Configuring intero-0.1.38...
+Preprocessing executable 'intero' for intero-0.1.38..
+Building executable 'intero' for intero-0.1.38..
+[ 1 of 10] Compiling Intero.Compat    ( src/Intero/Compat.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/Intero/Compat.o )
+[ 2 of 10] Compiling GhciTypes        ( src/GhciTypes.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/GhciTypes.o )
+[ 3 of 10] Compiling GhciMonad        ( src/GhciMonad.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/GhciMonad.o )
+[ 4 of 10] Compiling GhciTags         ( src/GhciTags.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/GhciTags.o )
+[ 5 of 10] Compiling GhciInfo         ( src/GhciInfo.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/GhciInfo.o )
+[ 6 of 10] Compiling GhciFind         ( src/GhciFind.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/GhciFind.o )
+[ 7 of 10] Compiling Completion       ( src/Completion.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/Completion.o )
+[ 8 of 10] Compiling Paths_intero     ( .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/autogen/Paths_intero.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/Paths_intero.o )
+[ 9 of 10] Compiling InteractiveUI    ( src/InteractiveUI.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/InteractiveUI.o )
+
+src/InteractiveUI.hs:116:1: warning: [-Wdeprecations]
+    Module ‘Network’ is deprecated:
+      The high level Network interface is no longer supported. Please use Network.Socket.
+    |
+116 | import qualified Network
+    | ^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/InteractiveUI.hs:117:1: warning: [-Wdeprecations]
+    Module ‘Network.BSD’ is deprecated:
+      This platform dependent module is no longer supported.
+    |
+117 | import Network.BSD
+    | ^^^^^^^^^^^^^^^^^^
+
+src/InteractiveUI.hs:695:32: warning: [-Wdeprecations]
+    In the use of ‘accept’ (imported from Network):
+    Deprecated: "The high level Network interface is no longer supported. Please use Network.Socket."
+    |
+695 |                   (h, _, _) <- Network.accept sock
+    |                                ^^^^^^^^^^^^^^
+
+src/InteractiveUI.hs:731:12: warning: [-Wdeprecations]
+    In the use of ‘getProtocolNumber’ (imported from Network.BSD):
+    Deprecated: "This platform dependent module is no longer supported."
+    |
+731 |   proto <- getProtocolNumber "tcp"
+    |            ^^^^^^^^^^^^^^^^^
+
+src/InteractiveUI.hs:737:19: warning: [-Wdeprecations]
+    In the use of ‘getHostByName’ (imported from Network.BSD):
+    Deprecated: "This platform dependent module is no longer supported."
+    |
+737 |        address <- getHostByName "127.0.0.1"
+    |                   ^^^^^^^^^^^^^
+
+src/InteractiveUI.hs:738:32: warning: [-Wdeprecations]
+    In the use of ‘aNY_PORT’ (imported from Network.Socket):
+    Deprecated: "Use defaultPort instead"
+    |
+738 |        bind sock (SockAddrInet aNY_PORT (hostAddress address))
+    |                                ^^^^^^^^
+
+src/InteractiveUI.hs:738:42: warning: [-Wdeprecations]
+    In the use of ‘hostAddress’ (imported from Network.BSD):
+    Deprecated: "This platform dependent module is no longer supported."
+    |
+738 |        bind sock (SockAddrInet aNY_PORT (hostAddress address))
+    |                                          ^^^^^^^^^^^
+[10 of 10] Compiling Main             ( src/Main.hs, .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero-tmp/Main.o )
+Linking .stack-work/dist/x86_64-linux-tinfo6/Cabal-2.4.0.1/build/intero/intero ...
+Installing executable intero in /home/choct155/projects/sicp/.stack-work/install/x86_64-linux-tinfo6/lts-13.8/8.6.3/bin
